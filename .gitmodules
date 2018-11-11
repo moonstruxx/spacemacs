@@ -1,3 +1,6 @@
 [submodule "ycmd"]
 	path = ycmd
 	url = https://github.com/Valloric/ycmd.git
+[submodule "malinka"]
+	path = malinka
+	url = https://github.com/LefterisJP/malinka.git
