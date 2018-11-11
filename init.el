@@ -45,28 +45,32 @@ values."
                       auto-completion-enable-help-tooltip t
                       auto-completion-enable-sort-by-usage t
                       )
-     better-defaults
-     emacs-lisp
-     git
-     ;; markdown
-     org
+
      ;; (shell :variables
      ;;        shell-default-height 30
      ;;        shell-default-position 'bottom)
-     spell-checking
+     markdown
+     org
      c-c++
-     treemacs
-     (treemacs :variables
-               treemacs-use-follow-mode t
-               treemacs-use-filewatch-mode t)
      c++-rtags
+     emacs-lisp
+     python
+     lua
+     shell-scripts
+     spell-checking
      syntax-checking
      (c-c++ :variables
             c-c++-enable-clang-support nil
             )
-
+     git
      version-control
      unicode-fonts
+     treemacs
+     (treemacs :variables
+               treemacs-use-follow-mode t
+               treemacs-use-filewatch-mode t)
+     better-defaults
+
      )
    ;; List of additional packages that will be installed without being
    ;; wrapped in a layer. If you need some configuration for these
@@ -330,7 +334,9 @@ layers configuration.
 This is the place where most of your configurations should be done. Unless it is
 explicitly specified that a variable should be set before a package is loaded,
 you should place your code here."
-
+  ;;This layer adds support for =evil-cleverparens= which allows to safely edit
+  ;;lisp code by keeping the s-expressions balanced.
+  (spacemacs/toggle-evil-safe-lisp-structural-editing-on-register-hook-emacs-lisp-mode)
 
   (spacemacs|use-package-add-hook org
     :pre-init
