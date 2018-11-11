@@ -310,6 +310,8 @@ executes.
  This function is mostly useful for variables that need to be set
 before packages are loaded. If you are unsure, you should try in setting them in
 `dotspacemacs/user-config' first."
+
+
   )
 
 (defun dotspacemacs/user-config ()
@@ -319,6 +321,8 @@ layers configuration.
 This is the place where most of your configurations should be done. Unless it is
 explicitly specified that a variable should be set before a package is loaded,
 you should place your code here."
+
+
   (spacemacs|use-package-add-hook org
     :pre-init
     ;; Code
@@ -337,17 +341,35 @@ you should place your code here."
     (load "/home/bjoern/.spacemacs.d/org/org-keybindings.el")
     (load "/home/bjoern/.spacemacs.d/org/org-archive.el")
     )
+
+
   (global-set-key (kbd "C-c c") 'org-capture)
   (global-set-key (kbd "<f12>") 'org-agenda)
 
   )
+(spacemacs|use-package-add-hook company
+  :pre-init
+  ;; Code
+  :post-init
+  ;; Code
+  :pre-config
+  ;; Code
+   :post-config
+   ;; Code
+
+   ;;  (use-package semantic)
+(semantic-mode)
+  (semantic-highlight-func-mode)
+  (semantic-stickyfunc-mode)
+      )
+
 
 ;; Do not write anything past this comment. This is where Emacs will
 ;; auto-generate custom variable definitions.
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
- ;; Your init file should contain only one such instance.
+ ;; Your init file sh ould contain only one such instance.
  ;; If there is more than one, they won't work right.
  '(org-agenda-files (quote ("~/git/gtd/")))
  '(package-selected-packages
