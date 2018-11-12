@@ -7,3 +7,15 @@
 [submodule "layers/gtd"]
 	path = layers/gtd
 	url = https://github.com/et2010/org-gtd.git
+[submodule "fasd"]
+	path = fasd
+	url = https://github.com/clvv/fasd.git
+[submodule "3rd-party/fasd"]
+	path = 3rd-party/fasd
+	url = https://github.com/clvv/fasd.git
+[submodule "3rd-party/malinka"]
+	path = 3rd-party/malinka
+	url = https://github.com/LefterisJP/malinka.git
+[submodule "3rd-party/rtags"]
+	path = 3rd-party/rtags
+	url = https://github.com/Andersbakken/rtags.git
