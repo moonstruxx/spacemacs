@@ -95,6 +95,7 @@ values."
      spacemacs-editing-visual
      spacemacs-modeline
      spacemacs-language
+     spacemacs-layouts
 
      debug
      fasd
