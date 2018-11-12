@@ -29,7 +29,7 @@ values."
    ;; If non-nil layers with lazy install support are lazy installed.
    ;; List of additional paths where to look for configuration layers.
    ;; Paths must have a trailing slash (i.e. `~/.mycontribs/')
-   dotspacemacs-configuration-layer-path (quote ("~/.spacemacs.d/layers"))
+   ;;dotspacemacs-configuration-layer-path (quote ("~/.spacemacs.d/layers"))
    ;; List of configuration layers to load.
    dotspacemacs-configuration-layers
    '(
@@ -164,7 +164,7 @@ vvalues."
    ;; with `:variables' keyword (similar to layers). Check the editing styles
    ;; section of the documentation for details on available variables.
    ;; (default 'vim)
-   dotspacemacs-editing-style 'emacs
+   dotspacemacs-editing-style 'hybrid
    ;; If non nil output loading progress in `*Messages*' buffer. (default nil)
    dotspacemacs-verbose-loading nil
    ;; Specify the startup banner. Default value is `official', it displays
@@ -180,9 +180,9 @@ vvalues."
    ;; `recents' `bookmarks' `projects' `agenda' `todos'."
    ;; List sizes may be nil, in which case
    ;; `spacemacs-buffer-startup-lists-length' takes effect.
-   dotspacemacs-startup-lists '((recents . 5)
-                                (projects . 7)
-                                (agenda . 5)
+   dotspacemacs-startup-lists '((recents . 6)
+                                (projects . 4)
+                                (agenda . 4)
                                 )
    ;; True if the home buffer should respond to resize events.
    dotspacemacs-startup-buffer-responsive t
@@ -391,7 +391,6 @@ you should place your code here."
     (load "/home/bjoern/.spacemacs.d/org/org-project.el")
     (load "/home/bjoern/.spacemacs.d/org/org-agenda.el")
     (load "/home/bjoern/.spacemacs.d/org/org-refile.el")
-
     (load "/home/bjoern/.spacemacs.d/org/org-tag.el")
     (load "/home/bjoern/.spacemacs.d/org/org-capture.el")
     (load "/home/bjoern/.spacemacs.d/org/org-keybindings.el")
@@ -400,26 +399,7 @@ you should place your code here."
   (global-set-key (kbd "C-c c") 'org-capture)
   (global-set-key (kbd "<f12>") 'org-agenda)
 
-;; (spacemacs|use-package-add-hook company
-;;   :pre-init
-;;   ;; Code
-;;   :post-init
-;;   ;; Code
-;;   :pre-config
-;;   ;; Code
-;;   :post-config
-;;   ;; Code
-
-;;   ;;  (use-package semantic)
-;;   ;;
-;;   ;;
-;;   ;;
-;;   (semantic-mode)
-;;   (semantic-highlight-func-mode)
-;;   (semantic-stickyfunc-mode)
-;;   )
- )
-
+)
 ;; Do not write anything past this comment. This is where Emacs will
 ;; auto-generate custom variable definitions.
 (custom-set-variables
@@ -450,7 +430,7 @@ This function is called at the very end of Spacemacs initialization."
  '(org-agenda-files (quote ("~/git/gtd/")))
  '(package-selected-packages
    (quote
-    (stickyfunc-enhance srefactor ivy-rtags ivy helm-rtags google-c-style flycheck-rtags cquery company-rtags rtags ccls lsp-mode mmm-mode markdown-toc markdown-mode gh-md flycheck-ycmd company-ycmd ycmd request-deferred deferred company-quickhelp irony ecb disaster company-c-headers cmake-mode clang-format zones unfill smeargle orgit org-projectile org-category-capture org-present org-pomodoro alert log4e gntp org-mime org-download mwim magit-gitflow htmlize helm-gitignore helm-company helm-c-yasnippet gnuplot gitignore-mode gitconfig-mode gitattributes-mode git-timemachine git-messenger git-link git-gutter-fringe+ git-gutter-fringe fringe-helper git-gutter+ git-gutter fuzzy flyspell-correct-helm flyspell-correct flycheck-pos-tip pos-tip flycheck evil-magit magit magit-popup git-commit ghub treepy graphql with-editor diff-hl company-statistics company auto-yasnippet yasnippet auto-dictionary ac-ispell auto-complete ws-butler winum which-key volatile-highlights vi-tilde-fringe uuidgen use-package toc-org spaceline powerline restart-emacs request rainbow-delimiters popwin persp-mode pcre2el paradox spinner org-plus-contrib org-bullets open-junk-file neotree move-text macrostep lorem-ipsum linum-relative link-hint indent-guide hydra hungry-delete hl-todo highlight-parentheses highlight-numbers parent-mode highlight-indentation helm-themes helm-swoop helm-projectile helm-mode-manager helm-make projectile pkg-info epl helm-flx helm-descbinds helm-ag google-translate golden-ratio flx-ido flx fill-column-indicator fancy-battery eyebrowse expand-region exec-path-from-shell evil-visualstar evil-visual-mark-mode evil-unimpaired evil-tutor evil-surround evil-search-highlight-persist evil-numbers evil-nerd-commenter evil-mc evil-matchit evil-lisp-state smartparens evil-indent-plus evil-iedit-state iedit evil-exchange evil-escape evil-ediff evil-args evil-anzu anzu evil goto-chg undo-tree eval-sexp-fu highlight elisp-slime-nav dumb-jump f dash s diminish define-word column-enforce-mode clean-aindent-mode bind-map bind-key auto-highlight-symbol auto-compile packed aggressive-indent adaptive-wrap ace-window ace-link ace-jump-helm-line helm avy helm-core popup async))))
+    (treemacs-evil ivy-rtags ivy helm-rtags google-c-style flycheck-rtags cquery company-rtags rtags ccls lsp-mode mmm-mode markdown-toc markdown-mode gh-md flycheck-ycmd company-ycmd ycmd request-deferred deferred company-quickhelp irony ecb disaster company-c-headers cmake-mode clang-format zones unfill smeargle orgit org-projectile org-category-capture org-present org-pomodoro alert log4e gntp org-mime org-download mwim magit-gitflow htmlize helm-gitignore helm-company helm-c-yasnippet gnuplot gitignore-mode gitconfig-mode gitattributes-mode git-timemachine git-messenger git-link git-gutter-fringe+ git-gutter-fringe fringe-helper git-gutter+ git-gutter fuzzy flyspell-correct-helm flyspell-correct flycheck-pos-tip pos-tip flycheck evil-magit magit magit-popup git-commit ghub treepy graphql with-editor diff-hl company-statistics company auto-yasnippet yasnippet auto-dictionary ac-ispell auto-complete ws-butler winum which-key volatile-highlights vi-tilde-fringe uuidgen use-package toc-org spaceline powerline restart-emacs request rainbow-delimiters popwin persp-mode pcre2el paradox spinner org-plus-contrib org-bullets open-junk-file neotree move-text macrostep lorem-ipsum linum-relative link-hint indent-guide hydra hungry-delete hl-todo highlight-parentheses highlight-numbers parent-mode highlight-indentation helm-themes helm-swoop helm-projectile helm-mode-manager helm-make projectile pkg-info epl helm-flx helm-descbinds helm-ag google-translate golden-ratio flx-ido flx fill-column-indicator fancy-battery eyebrowse expand-region exec-path-from-shell evil-visualstar evil-visual-mark-mode evil-unimpaired evil-tutor evil-surround evil-search-highlight-persist evil-numbers evil-nerd-commenter evil-mc evil-matchit evil-lisp-state smartparens evil-indent-plus evil-iedit-state iedit evil-exchange evil-escape evil-ediff evil-args evil-anzu anzu evil goto-chg undo-tree eval-sexp-fu highlight elisp-slime-nav dumb-jump f dash s diminish define-word column-enforce-mode clean-aindent-mode bind-map bind-key auto-highlight-symbol auto-compile packed aggressive-indent adaptive-wrap ace-window ace-link ace-jump-helm-line helm avy helm-core popup async))))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.

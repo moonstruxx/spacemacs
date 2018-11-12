@@ -4,3 +4,6 @@
 [submodule "malinka"]
 	path = malinka
 	url = https://github.com/LefterisJP/malinka.git
+[submodule "layers/gtd"]
+	path = layers/gtd
+	url = https://github.com/et2010/org-gtd.git
