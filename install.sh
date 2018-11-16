@@ -1,8 +1,8 @@
 #!/bin/bash
 
-ln -s 3rd-party/spacemacs ~/.emacs.d
+ln -s $(pwd)/3rd-party/spacemacs ~/.emacs.d
 #add install of socket activated rtags
-ln -s ./ ~/.spacemacs
+ln -s $(pwd) ~/.spacemacs
 mkdir ~/.fonts
 cp misc/fonts/* ~/.fonts
 fc-cache -f -v
