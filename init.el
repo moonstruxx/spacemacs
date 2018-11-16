@@ -76,6 +76,7 @@ values."
      markdown
      deft
      c-c++
+     c++-rtags
      emacs-lisp
      ;parinfer
      python
@@ -87,7 +88,9 @@ values."
      spell-checking
      syntax-checking
      (c-c++ :variables
-            c-c++-enable-clang-support nil)
+            c-c++-enable-clang-support nil
+            c-c++-backend 'rtags)
+
 
      git
      version-control
