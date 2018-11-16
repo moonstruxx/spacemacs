@@ -77,6 +77,7 @@ This function should only modify configuration layer settings."
      markdown
      deft
      c-c++
+     c++-rtags
      emacs-lisp
      parinfer
      python
@@ -88,7 +89,9 @@ This function should only modify configuration layer settings."
      spell-checking
      syntax-checking
      (c-c++ :variables
-            c-c++-enable-clang-support nil)
+            c-c++-enable-clang-support nil
+            c-c++-backend 'rtags)
+
 
      git
      version-control

@@ -13,3 +13,6 @@
 [submodule "3rd-party/spacemacs"]
 	path = 3rd-party/spacemacs
 	url = https://github.com/syl20bnr/spacemacs
+[submodule "layers/c++-rtags"]
+	path = layers/c++-rtags
+	url = https://github.com/kzemek/cpp-rtags-layer
