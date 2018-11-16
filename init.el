@@ -70,7 +70,7 @@ values."
      yaml
      ansible
      sql
-     javascript
+     ;javascript
      markdown
      org
      markdown
