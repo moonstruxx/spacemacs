@@ -19,3 +19,6 @@
 [submodule "3rd-party/rtags"]
 	path = 3rd-party/rtags
 	url = https://github.com/Andersbakken/rtags.git
+[submodule "3rd-party/spacemacs"]
+	path = 3rd-party/spacemacs
+	url = https://github.com/syl20bnr/spacemacs
