@@ -106,9 +106,9 @@ values."
      ;spacemacs-visual
      ;spacemacs-purpose
      ibuffer
-     (treemacs :variables
-               treemacs-use-follow-mode t
-               treemacs-use-filewatch-mode t)
+     ;(treemacs :variables
+     ;          treemacs-use-follow-mode t
+     ;          treemacs-use-filewatch-mode t)
      better-defaults
      semantic)
 
@@ -377,7 +377,7 @@ explicitly specified that a variable should be set before a package is loaded,
 you should place your code here."
   ;;This layer adds support for =evil-cleverparens= which allows to safely edit
   ;;lisp code by keeping the s-expressions balanced.
-  (spacemacs/toggle-evil-safe-lisp-structural-editing-on-register-hook-emacs-lisp-mode)
+  ;(spacemacs/toggle-evil-safe-lisp-structural-editing-on-register-hook-emacs-lisp-mode)
 
   (spacemacs|use-package-add-hook org
     :pre-init
