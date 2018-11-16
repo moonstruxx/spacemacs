@@ -98,7 +98,8 @@ values."
      spacemacs-language
      spacemacs-layouts
 
-     ;debug
+                                       ;debug
+     gtd
      fasd
      ;prettier
      ;treemacs
@@ -396,10 +397,11 @@ you should place your code here."
     ;; (load "~/.spacemacs.d/org/org-capture.el")
     ;; (load "~/.spacemacs.d/org/org-keybindings.el")
     ;; (load "~/.spacemacs.d/org/org-archive.el")
+    '(org-agenda-files (quote ("~/samba/git/org/")))
     )
   (global-set-key (kbd "C-c c") 'org-capture)
   (global-set-key (kbd "<f12>") 'org-agenda)
-  '(org-agenda-files (quote ("~/samba/git/org/")))
+
 
   )
 ;; Do not write anything past this comment. This is where Emacs will
@@ -425,3 +427,17 @@ This function is called at the very end of Spacemacs initialization."
  ;; If there is more than one, they won't work right.
  )
 )
+(custom-set-variables
+ ;; custom-set-variables was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ '(package-selected-packages
+   (quote
+    (boxquote bbdb yapfify yaml-mode xterm-color x86-lookup ws-butler winum which-key web-mode volatile-highlights vi-tilde-fringe uuidgen use-package unfill toc-org tagedit systemd stickyfunc-enhance srefactor sql-indent spray spaceline smeargle slime-company slim-mode shell-pop scss-mode sass-mode restart-emacs rainbow-delimiters pyvenv pytest pyenv-mode py-isort pug-mode popwin plantuml-mode pip-requirements phpunit phpcbf php-extras php-auto-yasnippets persp-mode pcre2el paradox orgit org-ref org-projectile org-present org-pomodoro org-mime org-download org-bullets open-junk-file neotree nasm-mode mwim multi-term move-text mmm-mode markdown-toc magit-gitflow lua-mode lorem-ipsum live-py-mode linum-relative link-hint jinja2-mode insert-shebang indent-guide ibuffer-projectile hy-mode hungry-delete hl-todo highlight-parentheses highlight-numbers highlight-indentation helm-themes helm-swoop helm-pydoc helm-projectile helm-mode-manager helm-make helm-gitignore helm-flx helm-descbinds helm-css-scss helm-company helm-c-yasnippet helm-ag graphviz-dot-mode google-translate golden-ratio gnuplot gitconfig-mode gitattributes-mode git-timemachine git-messenger git-link git-gutter-fringe git-gutter-fringe+ gh-md fuzzy flyspell-correct-helm flycheck-pos-tip flx-ido fish-mode fill-column-indicator fasd fancy-battery eyebrowse expand-region exec-path-from-shell evil-visualstar evil-visual-mark-mode evil-unimpaired evil-tutor evil-surround evil-search-highlight-persist evil-numbers evil-nerd-commenter evil-mc evil-matchit evil-magit evil-lisp-state evil-indent-plus evil-iedit-state evil-exchange evil-escape evil-ediff evil-args evil-anzu eval-sexp-fu eshell-z eshell-prompt-extras esh-help emmet-mode elisp-slime-nav ein dumb-jump drupal-mode disaster diminish diff-hl deft define-word cython-mode csv-mode company-web company-statistics company-shell company-quickhelp company-emacs-eclim company-c-headers company-auctex company-ansible company-anaconda common-lisp-snippets column-enforce-mode cmake-mode clean-aindent-mode clang-format auto-yasnippet auto-highlight-symbol auto-dictionary auto-compile ansible-doc ansible aggressive-indent adoc-mode adaptive-wrap ace-window ace-link ace-jump-helm-line ac-ispell))))
+(custom-set-faces
+ ;; custom-set-faces was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ )
