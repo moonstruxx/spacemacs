@@ -39,7 +39,7 @@ values."
      ;; <M-m f e R> (Emacs style) to install them.
      ;; ----------------------------------------------------------------
      helm
-     bm
+     ;bm
      auto-completion
      (auto-completion :variables
                       auto-completion-enable-help-tooltip t
@@ -56,7 +56,7 @@ values."
      ;;pdf
      ipython-notebook
      java
-     json
+     ;json
      php
      graphviz
      common-lisp
@@ -64,9 +64,9 @@ values."
      plantuml
      asciidoc
      latex
-     perl5
-     perl6
-     protobuf
+     ;perl5
+     ;perl6
+     ;protobuf
      yaml
      ansible
      sql
@@ -77,10 +77,10 @@ values."
      deft
      c-c++
      emacs-lisp
-     parinfer
+     ;parinfer
      python
      lua
-     cmake
+     ;cmake
      systemd
      shell
      shell-scripts
@@ -91,20 +91,20 @@ values."
 
      git
      version-control
-     unicode-fonts
+     ;unicode-fonts
      spacemacs-editing
      spacemacs-editing-visual
-     spacemacs-modeline
+     ;spacemacs-modeline
      spacemacs-language
      spacemacs-layouts
 
-     debug
+     ;debug
      fasd
-     prettier
-     treemacs
-     spacemacs-purpose
-     spacemacs-visual
-     spacemacs-purpose
+     ;prettier
+     ;treemacs
+     ;spacemacs-purpose
+     ;spacemacs-visual
+     ;spacemacs-purpose
      ibuffer
      (treemacs :variables
                treemacs-use-follow-mode t
@@ -388,17 +388,18 @@ you should place your code here."
     ;; Code
     :post-config
     ;; Code
-    (use-package org-habit)
-    (load "~/.spacemacs.d/org/org-project.el")
-    (load "~/.spacemacs.d/org/org-agenda.el")
-    (load "~/.spacemacs.d/org/org-refile.el")
-    (load "~/.spacemacs.d/org/org-tag.el")
-    (load "~/.spacemacs.d/org/org-capture.el")
-    (load "~/.spacemacs.d/org/org-keybindings.el")
-    (load "~/.spacemacs.d/org/org-archive.el")
+    ;(use-package org-habit)
+    ;; (load "~/.spacemacs.d/org/org-project.el")
+    ;; (load "~/.spacemacs.d/org/org-agenda.el")
+    ;; (load "~/.spacemacs.d/org/org-refile.el")
+    ;; (load "~/.spacemacs.d/org/org-tag.el")
+    ;; (load "~/.spacemacs.d/org/org-capture.el")
+    ;; (load "~/.spacemacs.d/org/org-keybindings.el")
+    ;; (load "~/.spacemacs.d/org/org-archive.el")
     )
   (global-set-key (kbd "C-c c") 'org-capture)
   (global-set-key (kbd "<f12>") 'org-agenda)
+  '(org-agenda-files (quote ("~/samba/git/org/")))
 
   )
 ;; Do not write anything past this comment. This is where Emacs will
@@ -409,19 +410,18 @@ you should place your code here."
 This is an auto-generated function, do not modify its content directly, use
 Emacs customize menu instead.
 This function is called at the very end of Spacemacs initialization."
-  (custom-set-variables
-   ;; custom-set-variables was added by Custom.
-   ;; If you edit it by hand, you could mess it up, so be careful.
-   ;; Your init file should contain only one such instance.
-   ;; If there is more than one, they won't work right.
-   '(org-agenda-files (quote ("~/samba/git/org/")))
-   '(package-selected-packages
-     (quote
-      (parinfer ivy-rtags ivy helm-rtags google-c-style flycheck-rtags cquery company-rtags rtags ccls lsp-mode mmm-mode markdown-toc markdown-mode gh-md flycheck-ycmd company-ycmd ycmd request-deferred deferred company-quickhelp irony ecb disaster company-c-headers cmake-mode clang-format zones unfill smeargle orgit org-projectile org-category-capture org-present org-pomodoro alert log4e gntp org-mime org-download mwim magit-gitflow htmlize helm-gitignore helm-company helm-c-yasnippet gnuplot gitignore-mode gitconfig-mode gitattributes-mode git-timemachine git-messenger git-link git-gutter-fringe+ git-gutter-fringe fringe-helper git-gutter+ git-gutter fuzzy flyspell-correct-helm flyspell-correct flycheck-pos-tip pos-tip flycheck evil-magit magit magit-popup git-commit ghub treepy graphql with-editor diff-hl company-statistics company auto-yasnippet yasnippet auto-dictionary ac-ispell auto-complete ws-butler winum which-key volatile-highlights vi-tilde-fringe uuidgen use-package toc-org spaceline powerline restart-emacs request rainbow-delimiters popwin persp-mode pcre2el paradox spinner org-plus-contrib org-bullets open-junk-file neotree move-text macrostep lorem-ipsum linum-relative link-hint indent-guide hydra hungry-delete hl-todo highlight-parentheses highlight-numbers parent-mode highlight-indentation helm-themes helm-swoop helm-projectile helm-mode-manager helm-make projectile pkg-info epl helm-flx helm-descbinds helm-ag google-translate golden-ratio flx-ido flx fill-column-indicator fancy-battery eyebrowse expand-region exec-path-from-shell evil-visualstar evil-visual-mark-mode evil-unimpaired evil-tutor evil-surround evil-search-highlight-persist evil-numbers evil-nerd-commenter evil-mc evil-matchit evil-lisp-state smartparens evil-indent-plus evil-iedit-state iedit evil-exchange evil-escape evil-ediff evil-args evil-anzu anzu evil goto-chg undo-tree eval-sexp-fu highlight elisp-slime-nav dumb-jump f dash s diminish define-word column-enforce-mode clean-aindent-mode bind-map bind-key auto-highlight-symbol auto-compile packed aggressive-indent adaptive-wrap ace-window ace-link ace-jump-helm-line helm avy helm-core popup async))))
-  (custom-set-faces
-   ;; custom-set-faces was added by Custom.
-   ;; If you edit it by hand, you could mess it up, so be careful.
-   ;; Your init file should contain only one such instance.
-   ;; If there is more than one, they won't work right.
-   )
-  )
+(custom-set-variables
+ ;; custom-set-variables was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ '(package-selected-packages
+   (quote
+    (yapfify yaml-mode xterm-color x86-lookup web-mode web-beautify unfill tagedit systemd stickyfunc-enhance srefactor sql-indent spray smeargle slime-company slime slim-mode shell-pop scss-mode sass-mode pyvenv pytest pyenv-mode py-isort pug-mode plantuml-mode pip-requirements phpunit phpcbf php-extras php-auto-yasnippets orgit org-ref pdf-tools key-chord ivy tablist org-projectile org-category-capture org-present org-pomodoro alert log4e gntp org-mime org-download nasm-mode mwim multi-term mmm-mode markdown-toc markdown-mode magit-gitflow lua-mode livid-mode live-py-mode json-mode json-snatcher json-reformat js2-refactor multiple-cursors js-doc jinja2-mode insert-shebang ibuffer-projectile hy-mode htmlize helm-pydoc helm-gitignore helm-css-scss helm-company helm-c-yasnippet helm-bibtex parsebib haml-mode graphviz-dot-mode gnuplot gitignore-mode gitconfig-mode gitattributes-mode git-timemachine git-messenger git-link git-gutter-fringe+ git-gutter-fringe fringe-helper git-gutter+ git-gutter gh-md fuzzy flyspell-correct-helm flyspell-correct flycheck-pos-tip flycheck fish-mode fasd evil-magit magit magit-popup git-commit ghub treepy graphql with-editor eshell-z eshell-prompt-extras esh-help emmet-mode ein skewer-mode request-deferred websocket deferred js2-mode simple-httpd drupal-mode php-mode disaster diff-hl deft cython-mode csv-mode company-web web-completion-data company-tern dash-functional tern company-statistics company-shell company-quickhelp pos-tip company-emacs-eclim eclim company-c-headers company-auctex company-ansible company-anaconda company common-lisp-snippets coffee-mode cmake-mode clang-format biblio biblio-core auto-yasnippet yasnippet auto-dictionary auctex ansible-doc ansible anaconda-mode pythonic adoc-mode markup-faces ac-ispell auto-complete ws-butler winum which-key volatile-highlights vi-tilde-fringe uuidgen use-package toc-org spaceline restart-emacs request rainbow-delimiters popwin persp-mode pcre2el paradox org-plus-contrib org-bullets open-junk-file neotree move-text macrostep lorem-ipsum linum-relative link-hint indent-guide hungry-delete hl-todo highlight-parentheses highlight-numbers highlight-indentation helm-themes helm-swoop helm-projectile helm-mode-manager helm-make helm-flx helm-descbinds helm-ag google-translate golden-ratio flx-ido fill-column-indicator fancy-battery eyebrowse expand-region exec-path-from-shell evil-visualstar evil-visual-mark-mode evil-unimpaired evil-tutor evil-surround evil-search-highlight-persist evil-numbers evil-nerd-commenter evil-mc evil-matchit evil-lisp-state evil-indent-plus evil-iedit-state evil-exchange evil-escape evil-ediff evil-args evil-anzu eval-sexp-fu elisp-slime-nav dumb-jump diminish define-word column-enforce-mode clean-aindent-mode auto-highlight-symbol auto-compile aggressive-indent adaptive-wrap ace-window ace-link ace-jump-helm-line))))
+(custom-set-faces
+ ;; custom-set-faces was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ )
+)
