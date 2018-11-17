@@ -19,3 +19,6 @@
 [submodule "misc/logview"]
 	path = misc/logview
 	url = https://github.com/moonstruxx/logview.git
+[submodule "misc/EverOrg"]
+	path = misc/EverOrg
+	url = https://github.com/mgmart/EverOrg.git
