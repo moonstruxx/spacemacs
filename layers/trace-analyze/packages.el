@@ -31,6 +31,7 @@
 
 (defconst trace-analyze-packages
   '(datetime
+    highlight
     (logview :location "~/.spacemacs.d/misc/logview"))
 
   "The list of Lisp packages required by the tracs-analyze layer.
@@ -66,6 +67,9 @@ Each entry is either:
 
 (defun trace-analyze/init-logview ()
   (use-package logview
+    :defer t))
+(defun trace-analyze/init-highlight ()
+  (use-package highlight
     :defer t))
 
 
