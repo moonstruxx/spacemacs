@@ -55,6 +55,7 @@ values."
      speed-reading
      ;;pdf
      ipython-notebook
+     neotree
      java
      ;json
      php
@@ -76,7 +77,6 @@ values."
      markdown
      deft
      c-c++
-     c++-rtags
      emacs-lisp
      ;parinfer
      python
@@ -90,8 +90,7 @@ values."
      (c-c++ :variables
             c-c++-enable-clang-support nil
             c-c++-backend 'rtags)
-
-
+     analyze-trace
      git
      version-control
      ;unicode-fonts
@@ -100,6 +99,7 @@ values."
      ;spacemacs-modeline
      spacemacs-language
      spacemacs-layouts
+<<<<<<< HEAD
 
                                        ;debug
      gtd
@@ -109,6 +109,14 @@ values."
      ;spacemacs-purpose
      ;spacemacs-visual
      ;spacemacs-purpose
+=======
+     debug
+     fasd
+     prettier
+     spacemacs-purpose
+     spacemacs-visual
+     spacemacs-purpose
+>>>>>>> bad8367... add gtd fork
      ibuffer
      ;(treemacs :variables
      ;          treemacs-use-follow-mode t

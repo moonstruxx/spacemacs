@@ -16,3 +16,6 @@
 [submodule "layers/c++-rtags"]
 	path = layers/c++-rtags
 	url = https://github.com/kzemek/cpp-rtags-layer
+[submodule "layers/gtd"]
+	path = layers/gtd
+	url = https://github.com/moonstruxx/org-gtd.git
