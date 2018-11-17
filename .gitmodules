@@ -1,6 +1,3 @@
-[submodule "layers/gtd"]
-	path = layers/gtd
-	url = https://github.com/et2010/org-gtd.git
 [submodule "3rd-party/fasd"]
 	path = 3rd-party/fasd
 	url = https://github.com/clvv/fasd.git
