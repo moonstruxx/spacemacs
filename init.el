@@ -56,6 +56,7 @@ This function should only modify configuration layer settings."
      speed-reading
      pdf
      ipython-notebook
+     neotree
      java
      json
      php
@@ -77,7 +78,6 @@ This function should only modify configuration layer settings."
      markdown
      deft
      c-c++
-     c++-rtags
      emacs-lisp
      parinfer
      python
@@ -91,8 +91,7 @@ This function should only modify configuration layer settings."
      (c-c++ :variables
             c-c++-enable-clang-support nil
             c-c++-backend 'rtags)
-
-
+     analyze-trace
      git
      version-control
      unicode-fonts
@@ -101,11 +100,9 @@ This function should only modify configuration layer settings."
      spacemacs-modeline
      spacemacs-language
      spacemacs-layouts
-
      debug
      fasd
      prettier
-     treemacs
      spacemacs-purpose
      spacemacs-visual
      spacemacs-purpose
