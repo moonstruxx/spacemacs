@@ -16,3 +16,6 @@
 [submodule "layers/gtd"]
 	path = layers/gtd
 	url = https://github.com/moonstruxx/org-gtd.git
+[submodule "misc/logview"]
+	path = misc/logview
+	url = https://github.com/moonstruxx/logview.git
