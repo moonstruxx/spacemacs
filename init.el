@@ -498,7 +498,12 @@ This function is called immediately after `dotspacemacs/init', before layer
 configuration.
 It is mostly for variables that should be set before packages are loaded.
 If you are unsure, try setting them in `dotspacemacs/user-config' first."
+  (if
+      (file-exists-p ("~/.spacemacs.d/local_defs.el"))
+      (load-file "~/.spacemacs.d/local_defs.el")
+    )
   )
+
 
 (defun dotspacemacs/user-load ()
   "Library to load while dumping.
