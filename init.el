@@ -499,8 +499,8 @@ configuration.
 It is mostly for variables that should be set before packages are loaded.
 If you are unsure, try setting them in `dotspacemacs/user-config' first."
   (if
-      (file-exists-p ("~/.spacemacs.d/local_defs.el"))
-      (load-file "~/.spacemacs.d/local_defs.el")
+      (file-exists-p "~/.spacemacs.d/local_defs.el")
+      (load "~/.spacemacs.d/local_defs.el")
     )
   )
 
