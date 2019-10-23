@@ -1,7 +1,7 @@
 ;; -*- mode: emacs-lisp; lexical-binding: t -*-
 ;; This file is loaded by Spacemacs at startup.
 ;; It must be stored in your home directory.
-
+(setq package-check-signature nil)
 (defun dotspacemacs/layers ()
   "Layer configuration:
 This function should only modify configuration layer settings."
@@ -501,7 +501,7 @@ If you are unsure, try setting them in `dotspacemacs/user-config' first."
       (file-exists-p "~/.spacemacs.d/local_defs.el")
       (load "~/.spacemacs.d/local_defs.el")
     )
-(load "~/.spacemacs.d/3rd-party/spacemacs/elpa/26.1/develop/lv-20181110.1740/lv.el")
+;(load "~/.spacemacs.d/3rd-party/spacemacs/elpa/26.1/develop/lv-20181110.1740/lv.el")
   )
 
 
